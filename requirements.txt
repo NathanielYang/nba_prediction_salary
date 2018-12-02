@@ -7,3 +7,8 @@ pprint
 pandas
 numpy
 re
+seaborn
+statsmodels.api
+yellowbrick
+sklearn
+matplotlib
