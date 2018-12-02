@@ -36,4 +36,7 @@ Run Instructions:
     
 How to Run the Code:
 
-- If you are running the code on virtual machine you should install pakages like: Numpy, Pandas, Sklearn, Request,bs4.
+- If you are running the code on virtual machine you should install packages like: Numpy, Pandas, Sklearn, Request,bs4,etc
+-Run the code master file.
+-We have used the below models:
+-Lasso
