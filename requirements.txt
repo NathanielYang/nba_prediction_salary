@@ -1,10 +1,9 @@
 ###### Requirements without Version Specifiers ######
 
-requests
-bs4
+
+bs4 
 BeautifulSoup
 pprint
-pandas
 numpy
 re
 seaborn
@@ -12,3 +11,8 @@ statsmodels.api
 yellowbrick
 sklearn
 matplotlib
+
+### With versions
+requests >= 2.20.1
+pandas >= 0.23.4
+numpy >= 1.15.4
