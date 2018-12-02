@@ -30,6 +30,15 @@ Installation instructions (if any besides cloning the repo):
     - Python packages should be listed appropriately in requirements.txt
 
 Run Instructions:
+     
+     Testing: step 1
 
     - What do you need to type to get your program to do its thing
     - Take a hypothetical player A as an example. Player A has height...
+    
+How to Run the Code:
+
+- If you are running the code on virtual machine you should install packages like: Numpy, Pandas, Sklearn, Request,bs4,etc
+-Run the code master file.
+-We have used the below models:
+-Lasso

@@ -1,0 +1,9 @@
+###### Requirements without Version Specifiers ######
+
+requests
+bs4
+BeautifulSoup
+pprint
+pandas
+numpy
+re
