@@ -38,7 +38,18 @@ Run Instructions:
     
 How to Run the Code:
 
-- If you are running the code on virtual machine you should install packages like: Numpy, Pandas, Sklearn, Request,bs4,etc
--Run the code master file.
--We have used the below models:
--Lasso
+-If you are running the code on virtual machine you should install packages like: Numpy, Pandas, Sklearn, Request,bs4,etc ( Please find the detailed list of pakage in requirement.txt file)
+
+-Run the code master file. (Filename: get_player_stat.ipynb)
+
+-We are using the below statistical model for predicting the salary of the NBA players:
+
+Linear regression
+Lasso regression
+Ridge regression
+
+-Along with the above models models we have also prepared a statiscal score by using player statistics and then we are using that model to prodict nba player salary. 
+With the help of our mdols we can able to predict salary of players to an accuracy of about 55-60%.
+
+
+
