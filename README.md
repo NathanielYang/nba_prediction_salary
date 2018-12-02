@@ -33,3 +33,7 @@ Run Instructions:
 
     - What do you need to type to get your program to do its thing
     - Take a hypothetical player A as an example. Player A has height...
+    
+How to Run the Code:
+
+- If you are running the code on virtual machine you should install pakages like: Numpy, Pandas, Sklearn, Request,bs4.
