@@ -79,7 +79,7 @@ Along with the above models, we also computed statiscal scores in the following 
       
 ## **Run Instructions:**
      
-For all statistical analysis and regression results, run the code in the master file: Final_file.ipynb, and following the steps as specified in the description section above.
+For all statistical analysis and regression results, run the code in the master file: Final_file.ipynb, and follow the steps as specified in the description section above.
 
 
 
