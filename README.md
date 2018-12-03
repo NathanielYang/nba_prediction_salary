@@ -7,14 +7,17 @@ Group Members: Ayushmaan Kumar, Ankit Yadav, Yining Li, Chenjian Yang
 Section 2
 
 
-Background:
+Background and Purpose of the Project:
 
-    The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their fan base across the world and income outside the court. 
+    The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their outside income and fan base across the world and income outside the court. 
     
-    We are curious about how much each of these factors contribute to their current salaries. For example, does age explain salaries to a certain extent? This project uses Python to analyze the relationship between salaris and the factors mentioned above and potentially develop models to predict individual player’s salaries based on these factors. Specifically the model takes individual players’ current year characteristics as inputs and returns their hypothetical predicted salaries. We are hopeful that our model would be of referential value to the general managers and individual players and their agents in negotiating the contracts. 
+    We are curious about how much each of the performance related factors contribute to player's current salaries. For example, does per game assists explain salaries to a certain extent? This project uses Python to analyze the relationship between salaris and the factors mentioned above. Specifically the model takes individual players’ current year statistics as inputs and returns their predicted salaries. We are hopeful that our model would be of referential value to the general managers and individual players and their agents in negotiating the contracts.
+    
+    In addition, we also wanted to use statistical scores to evaluate the extent to which a player improved compared to previous year. Hypothetically, players with higher scores should receive a larger salary increase in percentage.  
 
-
-Methodology:
+Methodology and Models:
+    
+    For predict player salaries, we implemented the following three models:
  
     1. Linear regression: 
     
@@ -22,43 +25,52 @@ Methodology:
     
     S(t) = a*X(t) + e 
     
-    where S(t) represents current salaries, X(t) is a vector capturing performance related variables. The sample we are going to use is most likely going to be players who signed new contracts, excluding rookie players and those who take voluntary pay cuts.
-   
-    2. Lasso regression
+    where S(t) represents current salaries, X(t) is a vector capturing performance related variables. 
     
-    Update here
+    2. Ridge regression
     
-    3. Ridge regression
+    Ridge regression imposes a penalty on the size of the coefficients to reduce the variance of the estimates. Ridge regression works best in situations where the OLS estimates have high variances, which apply to our dataset.
     
-    Update here
+    3. Lasso regression
+    
+    Different from Rdige regression, Lasso regression performs variable selections. The revised penalty allows coefficients to shrink towards exactly zero. Hence LASSO usually results into sparse models, that are easier to interpret.
     
     4. Regression with signals
     
-    Update here
+    Yining insent here
     
-    Along with the above models models we have also prepared a statiscal score by using player statistics and then we are using that model to predict nba player salaries. With the help of our models, we are able to predict salaries of NBA players to an accuracy of about 55-60%.
+    We get our best results from the Lasso regression, for which we are able to predict NBA player salaries with R^2 of 0.584.
     
+   
+    Along with the above models, we also computed statiscal scores in the following manner:
     
+    Yining insert here. 
+    
+
 Description:
     
-    STEP1: Sraping the data
+    STEP1: Scraping the data
     
     To scrap the data from basketball-reference.com run the following scripts (can also be found in the master file: get_player_stat.ipynb)
     
-    Description of the data here.
+    The dataset consists of per game statistics including (Games, Games Started, Minutes Played Per Game, Field Goals Per Game, ..., Points Per Game) for 449 players in season 2017 - 2018 from the follwoing url:
+    
+    https://www.basketball-reference.com/leagues/NBA_2018_per_game.html    
+    
     
     
     STEP2: Conduct initial analysis
     
-    We calculated correlations between different 
+    We calculated correlations between different factors. 
     
     
     STEP3: Run final regressions and construct predition model
     
     
-Installation instructions (if any besides cloning the repo):
+Installation instructions:
 
-    Besides cloning the repository, if you are running the code on virtual machine you should install the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
+    1. Cloning the repository;
+    2. Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
 
 Run Instructions:
       
