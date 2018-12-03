@@ -28,15 +28,15 @@ To predict player salaries, we implemented the following four models:
     
     where S(t) represents current salaries, X(t) is a vector capturing performance related variables. 
     
-2. Ridge regression
+2. Ridge regression:
     
     Ridge regression imposes a penalty on the size of the coefficients to reduce the variance of the estimates. Ridge regression works best in situations where the OLS estimates have high variances, which apply to our dataset.
     
-3. Lasso regression
+3. Lasso regression:
     
     Different from Rdige regression, Lasso regression performs variable selections. The revised penalty allows coefficients to shrink towards exactly zero. Hence LASSO usually results into sparse models, that are easier to interpret.
     
-4. Regression with signals
+4. Regression with signals:
 
    Yining insent here
     
