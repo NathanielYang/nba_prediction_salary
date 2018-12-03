@@ -10,15 +10,15 @@
 
 ## **Background and Purpose of the Project:**
 
-    The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their outside income and fan base across the world and income outside the court. 
+The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their outside income and fan base across the world and income outside the court. 
     
-    We are curious about how much each of the performance related factors contribute to player's current salaries. For example, does per game assists explain salaries to a certain extent? This project uses Python to analyze the relationship between salaris and the factors mentioned above. Specifically the model takes individual players’ current year statistics as inputs and returns their predicted salaries. We are hopeful that our model would be of referential value to the general managers and individual players and their agents in negotiating the contracts.
+We are curious about how much each of the performance related factors contribute to player's current salaries. For example, does per game assists explain salaries to a certain extent? This project uses Python to analyze the relationship between salaris and the factors mentioned above. Specifically the model takes individual players’ current year statistics as inputs and returns their predicted salaries. We are hopeful that our model would be of referential value to the general managers and individual players and their agents in negotiating the contracts.
     
     In addition, we also wanted to use statistical scores to evaluate the extent to which a player improved compared to previous year. Hypothetically, players with higher scores should receive a larger salary increase in percentage.  
 
 ## **Methodology and Models:**
     
-    To predict player salaries, we implemented the following four models:
+To predict player salaries, we implemented the following four models:
  
 1. Linear regression: 
     
@@ -50,8 +50,8 @@
     
 ## **Installation Instructions:**
 
-    * Cloning the repository;
-    * Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
+1. Cloning the repository;
+2. Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
     
 
 ## **Description:**
