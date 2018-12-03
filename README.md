@@ -59,7 +59,7 @@ Along with the above models, we also computed statiscal scores in the following 
 
 2. STEP2: Installing Packages
     
-    Libraries and packages are specified in the Installation Instructions section above and in the corresponding sections of the master file: get_player_stat.ipynb.
+    Libraries and packages are specified in the Installation Instructions section above and in the corresponding sections of the master file: Final_file.ipynb.
     
 3. STEP3: Scraping the Data
     
@@ -79,7 +79,7 @@ Along with the above models, we also computed statiscal scores in the following 
       
 ## **Run Instructions:**
      
-For all statistical analysis and regression results, run the code in the master file: get_player_stat.ipynb, and following the steps as specified in the description section above.
+For all statistical analysis and regression results, run the code in the master file: Final_file.ipynb, and following the steps as specified in the description section above.
 
 
 
