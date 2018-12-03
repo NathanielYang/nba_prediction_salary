@@ -1,13 +1,13 @@
-##Project Name: Predicting NBA Player Salary Upon Contract Expiration
+Project Name: Predicting NBA Player Salary Upon Contract Expiration
 
-##Group Name: CoolPython
+Group Name: CoolPython
 
-##Group Members: Ayushmaan Kumar, Ankit Yadav, Yining Li, Chenjian Yang
+Group Members: Ayushmaan Kumar, Ankit Yadav, Yining Li, Chenjian Yang
 
-##Section 2
+Section 2
 
 
-######Background and Purpose of the Project:
+Background and Purpose of the Project:
 
     The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their outside income and fan base across the world and income outside the court. 
     
@@ -15,7 +15,7 @@
     
     In addition, we also wanted to use statistical scores to evaluate the extent to which a player improved compared to previous year. Hypothetically, players with higher scores should receive a larger salary increase in percentage.  
 
-######Methodology and Models:
+Methodology and Models:
     
     For predict player salaries, we implemented the following three models:
  
@@ -47,13 +47,13 @@
     Yining insert here. 
     
     
-######Installation Instructions:
+Installation Instructions:
 
     1. Cloning the repository;
     2. Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
     
 
-######Description:
+Description:
     
     STEP1: Download Libraries
     
@@ -71,19 +71,13 @@
     
     STEP4: Data cleaning
 
-    In addition to these variables, we added team winning percentage during the regular season as an extra 
-    
-    There are five positions, for which we treated as a dummy variable
-    
-    We excluded any players with empty values and treated players who switched teams during the season as one single player. 
-    
-    
+    In addition to existing variables, we added team winning percentage during the regular season as an extra variable. For the five positions, we created as a dummy variable to distinguish between backcourt(PG, SG) and frontcourt(C, SF, PF). We excluded any players with empty values and treated players who switched teams during the season as one single player. 
+   
     STEP5: Analysis and Modeling
     
-    We calculated correlations between different factors. We implemented the four models introduced in the Methodology and Models section, 
-    
-   
-######Run Instructions:
+    We conducted initial analysis on the final dataset calculating correlations between every pair of variables, and then implemented the four models introduced in the Methodology and Models section, and added corresponding visiualizations.  
+      
+Run Instructions:
      
      For all statistical analysis and regression results, run the code in the master file: get_player_stat.ipynb, and following the steps as specified in the description section above.
 
