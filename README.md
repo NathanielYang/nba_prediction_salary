@@ -18,9 +18,9 @@
 
 ## **Methodology and Models:**
     
-    For predict player salaries, we implemented the following four models:
+    To predict player salaries, we implemented the following four models:
  
-    * Linear regression: 
+1. Linear regression: 
     
     Multiple variable linear regression is the most natural first choice. Below is the regression specification:
     
@@ -28,15 +28,15 @@
     
     where S(t) represents current salaries, X(t) is a vector capturing performance related variables. 
     
-    * Ridge regression
+2. Ridge regression
     
     Ridge regression imposes a penalty on the size of the coefficients to reduce the variance of the estimates. Ridge regression works best in situations where the OLS estimates have high variances, which apply to our dataset.
     
-    * Lasso regression
+3. Lasso regression
     
     Different from Rdige regression, Lasso regression performs variable selections. The revised penalty allows coefficients to shrink towards exactly zero. Hence LASSO usually results into sparse models, that are easier to interpret.
     
-    * Regression with signals
+4. Regression with signals
     
     Yining insent here
     
@@ -56,13 +56,13 @@
 
 ## **Description:**
 
-    * STEP1: Download Libraries
+1. STEP1: Download Libraries
 
-    * STEP2: Installing Packages
+2. STEP2: Installing Packages
     
     Libraries and packages are specified in the Installation Instructions section above and in the corresponding sections of the master file: get_player_stat.ipynb.
     
-    * STEP3: Scraping the data
+3. STEP3: Scraping the data
     
     To scrap the data from https://www.basketball-reference.com run scripts in the Section 3 Data Collection of the master file: get_player_stat.ipynb. The corresponding final pkl file is: tfa_working_ver_1. 
     
@@ -70,11 +70,11 @@
     
     https://www.basketball-reference.com/leagues/NBA_2018_per_game.html    
     
-    * STEP4: Data cleaning
+4. STEP4: Data cleaning
 
     In addition to existing variables, we added team winning percentage during the regular season as an extra variable. For the five positions, we created as a dummy variable to distinguish between backcourt(PG, SG) and frontcourt(C, SF, PF). We excluded any players with empty values and treated players who switched teams during the season as one single player. 
    
-    * STEP5: Analysis and Modeling
+5. STEP5: Analysis and Modeling
     
     We conducted initial analysis on the final dataset calculating correlations between every pair of variables, and then implemented the four models introduced in the Methodology and Models section, and added corresponding visiualizations.  
       
