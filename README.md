@@ -1,10 +1,11 @@
 # **Project Name: Predicting NBA Player Salary**
 
-# **Group Name: CoolPython**
 
-# **Group Members: Ayushmaan Kumar, Ankit Yadav, Yining Li, Chenjian Yang**
+**Group Name: CoolPython**
 
-# **Section 2**
+**Group Members: Ayushmaan Kumar, Ankit Yadav, Yining Li, Chenjian Yang**
+
+**Section 2**
 
 
 ## **Background and Purpose of the Project:**
@@ -17,9 +18,9 @@
 
 ## **Methodology and Models:**
     
-    For predict player salaries, we implemented the following three models:
+    For predict player salaries, we implemented the following four models:
  
-    1. Linear regression: 
+    * Linear regression: 
     
     Multiple variable linear regression is the most natural first choice. Below is the regression specification:
     
@@ -27,15 +28,15 @@
     
     where S(t) represents current salaries, X(t) is a vector capturing performance related variables. 
     
-    2. Ridge regression
+    * Ridge regression
     
     Ridge regression imposes a penalty on the size of the coefficients to reduce the variance of the estimates. Ridge regression works best in situations where the OLS estimates have high variances, which apply to our dataset.
     
-    3. Lasso regression
+    * Lasso regression
     
     Different from Rdige regression, Lasso regression performs variable selections. The revised penalty allows coefficients to shrink towards exactly zero. Hence LASSO usually results into sparse models, that are easier to interpret.
     
-    4. Regression with signals
+    * Regression with signals
     
     Yining insent here
     
@@ -49,31 +50,31 @@
     
 ## **Installation Instructions:**
 
-    1. Cloning the repository;
-    2. Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
+    * Cloning the repository;
+    * Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
     
 
 ## **Description:**
-    
-    STEP1: Download Libraries
-    
-    STEP2: Installing Packages
+
+    * STEP1: Download Libraries
+
+    * STEP2: Installing Packages
     
     Libraries and packages are specified in the Installation Instructions section above and in the corresponding sections of the master file: get_player_stat.ipynb.
     
-    STEP3: Scraping the data
+    * STEP3: Scraping the data
     
-    To scrap the data from basketball-reference.com run scripts in the Section 3 Data Collection of the master file: get_player_stat.ipynb. The corresponding final pkl file is: tfa_working_ver_1. 
+    To scrap the data from https://www.basketball-reference.com run scripts in the Section 3 Data Collection of the master file: get_player_stat.ipynb. The corresponding final pkl file is: tfa_working_ver_1. 
     
     The dataset consists of per game statistics including (Games, Games Started, Minutes Played Per Game, Field Goals Per Game, ..., Points Per Game) for 449 players in season 2017 - 2018 from the follwoing url:
     
     https://www.basketball-reference.com/leagues/NBA_2018_per_game.html    
     
-    STEP4: Data cleaning
+    * STEP4: Data cleaning
 
     In addition to existing variables, we added team winning percentage during the regular season as an extra variable. For the five positions, we created as a dummy variable to distinguish between backcourt(PG, SG) and frontcourt(C, SF, PF). We excluded any players with empty values and treated players who switched teams during the season as one single player. 
    
-    STEP5: Analysis and Modeling
+    * STEP5: Analysis and Modeling
     
     We conducted initial analysis on the final dataset calculating correlations between every pair of variables, and then implemented the four models introduced in the Methodology and Models section, and added corresponding visiualizations.  
       
