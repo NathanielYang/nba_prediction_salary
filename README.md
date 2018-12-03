@@ -1,4 +1,4 @@
-# **Project Name: Predicting NBA Player Salary Upon Contract Expiration**
+# **Project Name: Predicting NBA Player Salary**
 
 # **Group Name: CoolPython**
 
@@ -7,7 +7,7 @@
 # **Section 2**
 
 
-## *Background and Purpose of the Project:*
+## **Background and Purpose of the Project:**
 
     The National Basketball Association (NBA) is a men’s professional basketball league in North America. Player salaries are affected by tons of factors, such as their age, position, experience, performance as reflected by various basic and advanced game statistics, their business value in terms of their outside income and fan base across the world and income outside the court. 
     
@@ -15,7 +15,7 @@
     
     In addition, we also wanted to use statistical scores to evaluate the extent to which a player improved compared to previous year. Hypothetically, players with higher scores should receive a larger salary increase in percentage.  
 
-### **Methodology and Models:**
+## **Methodology and Models:**
     
     For predict player salaries, we implemented the following three models:
  
@@ -53,7 +53,7 @@
     2. Running the code on virtual machine requires installing the folowing packages: Numpy, Pandas, Sklearn, Request,bs4,etc (Please find the detailed list of packages in requirement.txt file).
     
 
-### **Description:**
+## **Description:**
     
     STEP1: Download Libraries
     
