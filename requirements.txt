@@ -1,5 +1,6 @@
-###### Requirements without Version Specifiers ######
+#### ESSENTIAL LIBRARIES FOR MAIN FUNCTIONALITY ####
 
+PACKAGES REQUIRED:
 
 bs4 
 BeautifulSoup
@@ -11,6 +12,23 @@ statsmodels.api
 yellowbrick
 sklearn
 matplotlib
+matplotlib.pyplot
+
+########EXTENSION REQUIRED FOR Jupyter Notebook#####
+
+We have used jupyter_contrib_nbextensions for displaying our Juptyter notebook. Please install the extension.
+
+Run the below command for installing the extension. Please follow the order as mentioned:
+1) pip install jupyter_contrib_nbextensions
+2)jupyter contrib nbextension install --user
+3) jupyter nbextension enable 
+
+Please use the below link if you need any help for installation:
+
+https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/install.html
+
+
+
 
 ### With versions
 requests >= 2.20.1
